@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/login.css">
+        <link rel="import" href="fonts/Franklin Gothic Book Regular/Franklin Gothic Book Regular.ttf">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <div id="sidebar" >
+            <section class="side-title" >
+                <h1 class="title-3">Acceso</h1>
+            </section>
+            <div class="content">
+                <p class="text">Conéctese a su cuenta de Radio Garka para agregar</br> sus canciones favoritas.</p>
+                <form method="post">
+                    <label for="username">Nombre de usuario </br></label>
+                    <input type="text" class="user-login" id="username" name="username" ></br>
+                    <label for="password"> Contraseña </label>
+                    <br>
+                    <input type="password" id="password" name="password"></br>
+                    <input type="checkbox" class="checkbox" ><label class="text-p" required="true" >Acepto los T&Cs y la política de privacidad</label></br>
+                    <br>
+                    <button type="button" id="submit" class="submit" onclick="login()">Iniciar sesión</button>
+                </form>
+            </div>
+        </div>
+
+        <header class="cabecera">
+            <a href="#"><h1 >Cow & Pastelito's radio</h1></a>
+        </header>
+        <main class="contenedor_general">
+
+            <h1 class="title"> <b>Mi biblioteca</b></h1>
+            
+            <div class="contenedor_imagen"> 
+                <img class="imagen" src="./Imagenes/music_flatline.png"></img>
+            </div>
+    
+            <div class="sub-title">
+                <div class="sub-title1">
+                    <p><b>Inicia sesión para disfrutar de tu biblioteca!</b></p>
+                    <p class="text">Disfruta tus albums y canciones favoritas en todo momento.</p>
+                </div>
+            </div> 
+            <div id="contenedor_botones">
+                <button class="button-light" id="toggle-button" onclick="toggleDiv()">Iniciar sesión</button>
+                <button type="button" class="button-dark" id="toggle-button-1" onclick="abrirPestana()">Registrarse</button>
+            </div>      
+        </main>
+    </body>
+    <script src="./Scripts/login.js"></script>
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navbar */
+
+.cabecera{
+    background-color: #181b1f;
+    width: 100vw;
+    height: 10vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contenedor_general{
+    display: flex;
+    height: 60vh;
+    text-align: center;
+    padding: 10vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: #181b1f;
+    font-family: inherit;
+    word-spacing:5px;
+}
+
+/*Imagen*/
+
+.contenedor_imagen{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen{
+    width: 250px;;
+}
+
+/*Textos*/
+
+.sub-title1{
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-align: center; 
+}
+
+.text{
+    font-size: 1rem; 
+    margin-bottom: 25px;
+}
+.text-p{
+    margin-left:-3vw;
+}
+
+.cabecera h1,a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Botones*/
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 25vw;
+    padding: 10px;
+}
+
+.button-light{
+    padding: 15px;
+    border-radius: 99rem;
+    margin: 15px;
+    width: 10rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button-dark{
+    padding: 15px;
+    border-radius: 99rem ;
+    margin: 15px;
+    width: 10rem;
+    background-color: #181b1f;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.button-light:hover,.button-dark:hover{
+    box-shadow:  rgba(85, 84, 84, 0.438) 5px 25px 35px;
+    transition: 0.2s;
+    transform: translateY(-0.25em);
+}
+
+/*barra desplegable inicio sesion*/
+
+#sidebar {
+    padding-top:10%;
+    width: 300px;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    right: -340px;
+    transition: right 0.5s ease;
+    z-index: 9999;
+}
+
+#sidebar.visible {
+    right: 0;
+}
+
+.show-sidebar #content {
+    transform: translateX(300px);
+}
+  
+.show-sidebar #sidebar {
+    transform: translateX(300px);
+}
+
+#sidebar .content {
+    margin: 35px;
+}
+
+.content input {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 5px;
+    width: 95%;
+    background-color: #f1f1f1;
+    font-size: inherit;
+    border-radius: 13px;
+}
+input:hover{
+    background-color: #d6d5d5d8;
+   
+}
+/* Submit button */
+
+.submit{
+    padding: 15px;
+    border-radius: 99rem;
+    background-color: #181b1f;
+    color: white;
+    margin: 10px 0 0 35px;
+    width: 10rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.submit:hover,.button-dark:hover{
+    box-shadow:  rgba(85, 84, 84, 0.438) 5px 5px 35px;
+    transition: 0.2s;
+    transform: translateY(-0.25em);
+}
+input[type='checkbox']{
+   
+    height: 15px;
+    width: 15px;
+    margin-right: 25px; 
+}
+.text-p{
+    margin-left:0;
+}
+
+.title-3{
+    font-size: 2.3rem;
+    color: #181b1f;
+    font-family: inherit;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+   
+}
+
+
+.side-title{
+    border-bottom: 3px rgba(175, 175, 175, 0.637) solid ;
+}
+
+  /*
+  .show-sidebar #content {
+    transform: translateX(300px);
+  }
+  
+  .show-sidebar #sidebar {
+    transform: translateX(300px);
+  }
+ */
+
+/* btn menu */
+
+
+
+
+/* 
+#email{
+    padding: 5px;
+    margin: 10px;
+}
+#password{
+    padding: 5px;
+    margin: 10px;
+}
+#submit{
+    padding: 5px;
+    margin: 10px;
+    
+}*/
