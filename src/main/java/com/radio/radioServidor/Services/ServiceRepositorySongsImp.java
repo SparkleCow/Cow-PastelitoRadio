@@ -3,7 +3,6 @@ package com.radio.radioServidor.Services;
 import com.radio.radioServidor.Entities.Songs.DataResponseSong;
 import com.radio.radioServidor.Entities.Songs.SongEntity;
 import com.radio.radioServidor.Repository.SongsRepository;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -11,11 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ServiceRepositorySongImp implements ServiceRepository<DataResponseSong>{
+public class ServiceRepositorySongsImp implements ServiceRepositorySongs<DataResponseSong> {
 
     private SongsRepository repository;
 
-    public ServiceRepositorySongImp(SongsRepository repository){
+    public ServiceRepositorySongsImp(SongsRepository repository){
         this.repository = repository;
     }
     @Override

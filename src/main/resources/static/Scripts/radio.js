@@ -1,4 +1,3 @@
-
 cargarCanciones();
 
 async function cargarCanciones(){
@@ -20,3 +19,6 @@ async function cargarCanciones(){
     let componente = document.getElementById("galeriaCard");
     componente.innerHTML = respuestaCanciones;
 }
+
+
+
