@@ -27,6 +27,15 @@ public class ServiceRepositorySongsImp implements ServiceRepositorySongs<DataRes
     }
 
     @Override
+    public ResponseEntity<List<DataResponseSong>> findGender(String genero) {
+        List<SongEntity> lista = repository.findByGeneroContaining(genero);
+        ArrayList<DataResponseSong> array = new ArrayList<>();
+        lista.forEach(x -> array.add(new DataResponseSong(x.getId(), x.getNombreArtista(), x.getNombreCancion(),x.getUrlImagen(),
+                x.getUrlCancion(), x.getGenero())));
+        return ResponseEntity.ok(array);
+    }
+
+    @Override
     public DataResponseSong findOne() {
         return null;
     }

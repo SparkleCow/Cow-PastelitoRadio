@@ -38,5 +38,4 @@ public class UserDetailsServiceImp implements UserDetailsService{
     public Collection<GrantedAuthority> getAuthorities(List<RoleEntity> roles){
         return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
     }
-
 }

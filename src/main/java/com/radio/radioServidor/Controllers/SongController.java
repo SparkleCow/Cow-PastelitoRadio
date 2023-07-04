@@ -1,9 +1,12 @@
 package com.radio.radioServidor.Controllers;
 
+import com.radio.radioServidor.Entities.Songs.DataRequestSongGender;
 import com.radio.radioServidor.Entities.Songs.DataResponseSong;
 import com.radio.radioServidor.Services.ServiceRepositorySongs;
+import org.apache.catalina.connector.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -22,8 +25,8 @@ public class SongController {
         return repositoryImp.findAll();
     }
 
-    @GetMapping()
-    public ResponseEntity<List<DataResponseSong>> findBy
-
-
+    @GetMapping("/api/songs/gender")
+    public ResponseEntity<List<DataResponseSong>> findByGender(@RequestBody DataRequestSongGender dataRequestSongGender){
+        return repositoryImp.findGender(dataRequestSongGender.genero());
+    }
 }

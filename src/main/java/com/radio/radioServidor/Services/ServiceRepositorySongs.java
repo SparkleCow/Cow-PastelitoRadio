@@ -9,6 +9,7 @@ import java.util.List;
 public interface ServiceRepositorySongs<T> {
 
     public ResponseEntity<List<T>> findAll();
+    public ResponseEntity<List<T>> findGender(String genero);
     public T findOne();
     public void deleteOne();
     public void deleteAll();

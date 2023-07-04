@@ -37,7 +37,7 @@ async function login(){
       
         if (token) {
           // El inicio de sesión fue exitoso, se recibió un token
-          localStorage.setItem("token", token);
+          guardarTokenEnCookie(token);
           alert("Inicio de sesión exitoso");
           // Redirige a la página principal u otra página protegida
           window.location.href = "/index.html";
@@ -50,4 +50,8 @@ async function login(){
         console.error("1Error:", error);
       });
 };
+
+function guardarTokenEnCookie(token) {
+  document.cookie = "token=" + token + "; path=/";
+}
 

@@ -43,16 +43,18 @@ public class SecurityConfig{
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
+                .cors(withDefaults())
                 .exceptionHandling(exception -> exception
                         .authenticationEntryPoint(jwtAuthorityEntryPoint))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers( "/", "/index.html", "/login.html", "/register.html").permitAll()
+                        .requestMatchers( "/", "/index.html", "/login.html", "/register.html", "/podcast.html").permitAll()
                         .requestMatchers("api/songs", "/api/createUser", "/api/login", "/api/createAdmin").permitAll()
+                        .requestMatchers("/api/songs/gender").permitAll()
                         .requestMatchers("/Scripts/**", "/Styles/**", "/Imagenes/**", "/favicon.ico").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .formLogin(withDefaults());
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+
         return http.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class).build();
     }
 }
