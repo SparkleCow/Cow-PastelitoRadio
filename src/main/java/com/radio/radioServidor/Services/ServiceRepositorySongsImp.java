@@ -5,7 +5,6 @@ import com.radio.radioServidor.Entities.Songs.SongEntity;
 import com.radio.radioServidor.Repository.SongsRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,27 +35,12 @@ public class ServiceRepositorySongsImp implements ServiceRepositorySongs<DataRes
     }
 
     @Override
-    public DataResponseSong findOne() {
-        return null;
+    public ResponseEntity<List<DataResponseSong>> findBySearch(String busqueda) {
+        List<SongEntity> lista = repository.findBySearch(busqueda);
+        List<DataResponseSong> array = new ArrayList<>();
+        lista.forEach(x -> array.add(new DataResponseSong(x.getId(), x.getNombreArtista(), x.getNombreCancion(),x.getUrlImagen(),
+                x.getUrlCancion(), x.getGenero())));
+        return ResponseEntity.ok(array);
     }
 
-    @Override
-    public void deleteOne() {
-
-    }
-
-    @Override
-    public void deleteAll() {
-
-    }
-
-    @Override
-    public void update() {
-
-    }
-
-    @Override
-    public void create() {
-
-    }
 }

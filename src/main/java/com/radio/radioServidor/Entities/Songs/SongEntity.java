@@ -15,9 +15,13 @@ public class SongEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
+    @Column(name = "url_imagen")
     public String urlImagen;
+    @Column(name = "url_cancion")
     public String urlCancion;
+    @Column(name = "nombre_artista")
     public String nombreArtista;
+    @Column(name = "nombre_cancion")
     public String nombreCancion;
     public String genero;
 
