@@ -25,8 +25,8 @@
                 <li><a href="podcast.html">Podcast</a></li>
                 <li><a href="musica.html">Musica</a></li>
                 <li><a href="weekSongs.html">Seleccion semanal</a></li>
-                <li><a href="register.html">Registrarse</a></li>
-                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="#" onclick="funcionLogueo('http://localhost:8080/register.html')">Registrarse</a></li>
+                <li><a href="#" onclick="funcionLogueo('http://localhost:8080/login.html')">Ingresar</a></li>
             </ul>
     </div>
 
@@ -56,21 +56,25 @@
             </p>
         </div>
         <div class="imagenesInformacion">
-            <div class="galeriaInformacion">
+            <div class="galeriaInformacion" onclick="direccionarCanciones('https://youtu.be/Hr3dhJto6UQ')">
                 <div class="imagen">
                     <img class="imagenAlbum" src="./Imagenes/canciones/pursuing.jpg">
                 </div>
-                
                 <div class="informacion_imagen">
                     <p>
                         Pursuing Paradise - Memories
+                        <br/>
+                        <br/>
+                        <br/>
+                        Mayo 2014
                     </p>
                 </div>
                 <div class="icono_reproducir">
-                    <img src="./Imagenes/canciones/Reproduccion.png" width="32px" height="32px">
+                    <img src="./Imagenes/canciones/Reproduccion.png" width="40px" height="40px">
                 </div>
             </div>
-            <div class="galeriaInformacion">
+            
+            <div class="galeriaInformacion" onclick="direccionarCanciones('https://youtu.be/2ItFPmwkCAI')">
                 <div class="imagen">
                     <img class="imagenAlbum" src="./Imagenes/canciones/blur.jpg">
                 </div>
@@ -78,13 +82,18 @@
                 <div class="informacion_imagen">
                     <p>
                         Blur - Leisure
+                        <br/>
+                        <br/>
+                        <br/>
+                        Agosto 1991
                     </p>
                 </div>
                 <div class="icono_reproducir">
-                    <img src="./Imagenes/canciones/Reproduccion.png" width="32px" height="32px">
+                    <img src="./Imagenes/canciones/Reproduccion.png" width="40px" height="40px">
                 </div>
             </div>
-            <div class="galeriaInformacion">
+            
+            <div class="galeriaInformacion" onclick="direccionarCanciones('https://www.youtube.com/watch?v=QqLrVzCtVt0&list=PLB1DhR4CImT4IMnq3CX-cCEtB0aLjyWTo')">
                 <div class="imagen">
                     <img class="imagenAlbum" src="./Imagenes/canciones/KaliUchis.png">
                 </div>
@@ -92,10 +101,14 @@
                 <div class="informacion_imagen">
                     <p>
                         Kali Uchis - Isolation
+                        <br/>
+                        <br/>
+                        <br/>
+                        Abril 2018
                     </p>
                 </div>
                 <div class="icono_reproducir">
-                    <img src="./Imagenes/canciones/Reproduccion.png" width="32px" height="32px">
+                    <img src="./Imagenes/canciones/Reproduccion.png" width="40px" height="40px">
                 </div>
             </div>
         </div>
@@ -106,16 +119,26 @@
             <h1>Cow & pastelito radio</h1>
         </div>
         <div class="informacionFooter">
-            <p>Quienes somos</p>
-            <p>Holas holas</p>
-            <p>Quienes somos</p>
-            <p>Holas holas</p>
+            <p><strong>Nuestro equipo de trabajo</strong></p>
+            <br/>
+            <p>
+                Nuestro equipo está conformado por amantes de la música
+                y expertos en producción de contenido, comprometidos 
+                en brindarte una experiencia de alta calidad. 
+                Nos enorgullece presentar programas musicales curados 
+                por nuestros talentosos DJs, quienes exploran diversos géneros, 
+                épocas y estilos para ofrecerte una selección diversa y emocionante.
+                Además, contamos con una amplia gama de podcasts que abarcan temas 
+                como música, cultura, entrevistas, noticias y mucho más. Estos podcasts
+                son cuidadosamente producidos y presentados por profesionales
+                apasionados por sus respectivas áreas.
+            </p>
         </div>
         <div class="contactoFooter">
-            <img src="./Imagenes/iconos/github.png"/>
-            <img src="./Imagenes/iconos/instagram.png"/>
-            <img src="./Imagenes/iconos/youtube.png"/>
-            <img src="./Imagenes/iconos/soundcloud.png"/>
+            <a href="https://github.com/SparkleCow" target="_black"><img src="./Imagenes/iconos/github.png"/></a>
+            <a href="https://www.instagram.com/_y___e__" target="_black"><img src="./Imagenes/iconos/instagram.png"/></a>
+            <a href="https://www.youtube.com/@sparklecow2796/featured" target="_black"><img src="./Imagenes/iconos/youtube.png"/></a>
+            <a href="https://soundcloud.com/ttrstt/dressed-for-space" target="_black"><img src="./Imagenes/iconos/soundcloud.png"/></a>
         </div>
     </footer>
     <script src="./Scripts/radio.js"></script>

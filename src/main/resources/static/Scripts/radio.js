@@ -20,6 +20,29 @@ async function cargarCanciones(){
     componente.innerHTML = respuestaCanciones;
 }
 
+function direccionarCanciones(url){
+  window.open(url);
+}
 
+function funcionLogueo(url){
+  var token = obtenerValorDeCookie("token");
+  if(token){
+    alert("Ya te has logueado :D")
+    return;
+  }
+  window.location.href=url;
+}
+
+function obtenerValorDeCookie(nombre) {
+  var cookies = document.cookie.split(";");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+
+    if (cookie.startsWith(nombre + "=")) {
+      return cookie.substring(nombre.length + 1);
+    }
+  }
+  return null;
+}
 
 
