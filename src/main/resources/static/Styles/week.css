@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header_content{
+    width: 100%;
+    height: 10vh;
+    background-color:#181b1f;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_content h1{
+    color:#fff;
+}
+
+.main_content{
+    width: 100%;
+    min-height: 90vh;
+    background-color:#181b1f;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    min-height: 600px;
+    width: 80%;
+    padding-top: 30px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f5f6f7;
+}
+
+.content h1{
+    max-width: 1200px;
+    min-width: 900px;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 60px 0;
+}
+
+.cancion_div{
+    background-color: white;
+    width: 1170px;
+    height: 368px;
+    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0/9%);
+  }
+  
+  .cancion_div .imagen_cancion{
+    height: 100%;
+    width: auto;
+  }
+  
+  .informacion_cancion{
+    text-align: center;
+    padding: 40px;
+    font-weight: 400;
+    font-family: Lato, sans-serif;
+    line-height: 1.5rem;
+  }
+  
+  .nombre_cancion{
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .nombre_artista{
+    font-weight: 600;
+    margin: 10px;
+  }
+  
+  .descripcion_cancion{
+    margin: 10px;
+  }
+

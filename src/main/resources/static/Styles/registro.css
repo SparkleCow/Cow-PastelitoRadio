@@ -19,10 +19,10 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
+    text-align: center;
 }
-.cabecera a{
+.cabecera h1{
     color: white;
-    text-decoration: none;
 }
 
 .container{

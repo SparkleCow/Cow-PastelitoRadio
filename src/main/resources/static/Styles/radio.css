@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 200vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .cabecera{
@@ -128,6 +129,7 @@ body{
 .cow_pastelito_informacion p{
     text-align: center;
     padding: 20px;
+    line-height: 2.5;
 }
 
 .imagenesInformacion{
