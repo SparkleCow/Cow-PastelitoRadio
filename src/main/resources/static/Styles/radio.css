@@ -3,6 +3,10 @@
     padding:0;
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     background-color: #fafafa;
     display: flex;
@@ -10,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 200vh;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Comic Neue', cursive;
 }
 
 .cabecera{

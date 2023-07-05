@@ -3,12 +3,16 @@
     padding: 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 body, html{
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Comic Neue', cursive;
 }
 
 /* Navbar */

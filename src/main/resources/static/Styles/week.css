@@ -3,11 +3,15 @@
     padding: 0px;
 }
 
-.body{
+a{
+  text-decoration: none;
+}
+
+body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Comic Neue', cursive;
 }
 
 .header_content{
@@ -79,6 +83,7 @@
   
   .nombre_cancion{
     font-weight: bold;
+    font-family: 'Comic Neue', cursive;
     margin: 10px;
   }
   
