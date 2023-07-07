@@ -47,9 +47,9 @@ public class SecurityConfig{
                 .exceptionHandling(exception -> exception
                         .authenticationEntryPoint(jwtAuthorityEntryPoint))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers( "/", "/index.html", "/login.html", "/register.html", "/podcast.html", "/weekSongs.html").permitAll()
-                        .requestMatchers("api/songs", "/api/createUser", "/api/login", "/api/createAdmin").permitAll()
-                        .requestMatchers("/api/songs/**").permitAll()
+                        .requestMatchers("/", "/index.html", "/login.html", "/register.html", "/podcast.html", "/weekSongs.html", "/songs.html").permitAll()
+                        .requestMatchers("/api/createUser", "/api/login", "/api/createAdmin").permitAll()
+                        .requestMatchers("/api/songs", "/api/songs/gender", "/api/songs/search").permitAll()
                         .requestMatchers("/Scripts/**", "/Styles/**", "/Imagenes/**", "/favicon.ico").permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session

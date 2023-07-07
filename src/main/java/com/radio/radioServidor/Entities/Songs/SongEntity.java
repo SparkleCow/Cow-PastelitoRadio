@@ -3,6 +3,8 @@ package com.radio.radioServidor.Entities.Songs;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Objects;
+
 @Entity
 @Builder
 @Table(name = "songs" )
@@ -30,5 +32,23 @@ public class SongEntity {
         this.nombreArtista = nombreArtista;
         this.nombreCancion = nombreCancion;
         this.genero = genero;
+    }
+
+    public void update(DataUpdateSong dataUpdateSong){
+        if(dataUpdateSong.nombreArtista()!=null && !dataUpdateSong.nombreArtista().equals("")){
+            this.nombreArtista = dataUpdateSong.nombreArtista();
+        }
+        if(dataUpdateSong.nombreCancion()!=null && !dataUpdateSong.nombreCancion().equals("")){
+            this.nombreCancion = dataUpdateSong.nombreCancion();
+        }
+        if(dataUpdateSong.urlCancion()!=null && !dataUpdateSong.urlCancion().equals("")){
+            this.urlCancion = dataUpdateSong.urlCancion();
+        }
+        if(dataUpdateSong.urlImagen()!=null && !dataUpdateSong.urlImagen().equals("")){
+            this.urlImagen = dataUpdateSong.urlImagen();
+        }
+        if(dataUpdateSong.genero()!=null && !dataUpdateSong.genero().equals("")){
+            this.genero = dataUpdateSong.genero();
+        }
     }
 }
