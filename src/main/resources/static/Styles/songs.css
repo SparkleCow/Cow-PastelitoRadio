@@ -3,12 +3,12 @@
     box-sizing: border-box;
     padding: 0px;
 }
+
 body {
-    min-width: 100vw;
+    width: 100vw;
     background-color: white;
-    
 }
-/* Navbar */
+
 .cabecera{
     background-color: #181b1f;
     width: 100vw;
@@ -17,42 +17,17 @@ body {
     align-items:center;
     justify-content:center;
 }
+
 .cabecera h1,a{
     color: white;
     text-decoration: none;
-    
 }
+
 #link {
     color: rgba(0, 0, 0, 0.774);
     text-decoration: none;
     margin: 2rem 0 15px 3rem;
 }
-/* container */
-.container{
-    min-height: 100vh;
-    background-color: #181b1f;
-}
-
-
-.table-content{
-    width: 50vw;
-    margin: 0 auto; 
-    
-}
-td{
-    padding:5px;
-}
-.title-content{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-
-.title-description{
-    margin:5%;
-}
-/* Repertorio Musical */
 
 .sub-title{
     padding: 1%;
@@ -69,28 +44,48 @@ td{
 
 .content{
     height: 50vh;
+    width: 100vw;
     background: rgba(139, 39, 92, 0.817);
     backdrop-filter: blur(50%);
     display: flex;
-    flex-direction: row; 
+    align-items: center;
 }
+
 .content img{
-    margin: 1% 0 0 15%;
+    margin-left: 20%;
     width: 250px;
     height: 250px;
 }
 
-.table-content p{
+.container{
+    min-height: 25vh;
+    background-color: thistle;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.table-content{
+    width: 90vw;
+    max-height: 90%;
+    background-color: #F9F1F2;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+td{
+    padding:5px;
+}
+
+.title-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+i{
     margin-left: 5%;
-    
-    
+    color: black;
 }
-th{
-    padding:10px;
-    text-align: left;
-}
-.
-/* imagen de cada uno de los elementos */
 
 .title-content img{
     width: 65px;
@@ -99,19 +94,22 @@ th{
     border-radius: 1rem;
 }
 
-
-/* Table */
-.table-content{
-    width: 100vw;
-    background-color: #F9F1F2;
-    margin: 0 auto;
-}
-td{
-    padding:10px;
-}
 .table-content p{
     margin-left: 5%;
 }
+th{
+    padding:10px;
+    text-align: left;
+}
+
+.table-content p{
+    margin-left: 5%;
+}
+
+td{
+    padding:10px;
+}
+
 
 th{
     padding:25px;
@@ -123,81 +121,60 @@ th{
     justify-content: flex-start;
 }
 
-
-
-/* 
- Search bar */
- .navegacion{
-     
-    margin: 0 auto; 
+.navegacion{
+    margin: 0 auto;
+    width: 100vw;
     height: 10vh;
     background-color: thistle; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
-/* .search-span .search-bar{
-    
-    float: right;
-    margin: 1.5% 10% 0 0;
-    width: 20vw;
-} */
 
+ 
 .search-container {
-    float: right;
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
     border-radius: 5px;
     padding: 5px;
-    width: 25vw;
-    margin: 15px 8vw 0 0;
-  }
-  
-  #search-icon {
+    width: 20%;
+    margin-right: 10%;
+}
+
+#search-icon {
     margin-right: 5px;
     color: gray;
     cursor: pointer;
-  }
-  
-  #search-input {
+}
+
+#search-bar {
     display: none;
     border: none;
     background-color: transparent;
     outline: none;
-    width: 0;
+    width: 3vw;
     transition: all 0.3s ease;
-  }
-  
-  #search-input.active {
+
+}
+
+#search-input.active {
     display: block;
     width: 200px;
-  }
-
-/* Icono  */
-.fa-solid {
-    color: #181b1f;
 }
-/* input{
-    height: 5vh;
-    background-color: #ffffff;
-    color: white;
-    border-radius: 5px;
-    border-bottom: #cccdcf 1px solid;
-    border-right:#cccdcf 1px solid ;
+input{
+    background-color: transparent;
+    border: #f2f2f2;
+    width: 15vw;
+    margin-left: 1.2rem;
+
 }
 input::placeholder{
-    color: #cccdcf;
+    color: black;
+
 }
 input:focus{
-    background-color: #e200789f;
+    background-color: #cccdcf;
     color: black;
+    border: #f2f2f2;
 }
-input::placeholder:focus{
-    color: black;
-    border-radius: 5px;
-    
-} */
-/* .fas {
-    position: absolute;
-    padding: 10px;
-    color: green;
-    text-align: center;
-} */
