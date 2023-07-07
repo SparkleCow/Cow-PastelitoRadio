@@ -29,12 +29,12 @@ public class SongController {
         return repositoryImp.findAll();
     }
 
-    @GetMapping("/api/songs/gender")
+    @PostMapping("/api/songs/gender")
     public ResponseEntity<List<DataResponseSong>> findByGender(@Valid @RequestBody DataRequestSongGender dataRequestSongGender){
         return repositoryImp.findGender(dataRequestSongGender.genero());
     }
 
-    @GetMapping("/api/songs/search")
+    @PostMapping("/api/songs/search")
     public ResponseEntity<List<DataResponseSong>> findBySearch(@Valid @RequestBody DataRequestSongSearch dataRequestSongSearch){
         return repositoryImp.findBySearch(dataRequestSongSearch.busqueda());
     }
