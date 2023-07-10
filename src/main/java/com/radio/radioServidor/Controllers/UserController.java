@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.Collections;
 
+/*
+* Controlador para registrar y autenticar un usuario a través de JWT
+*/
 @RestController
 public class UserController {
 

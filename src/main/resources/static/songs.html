@@ -26,6 +26,35 @@
                     </p>
                 </h2>
             </span>
+            <div class="filtro-container">
+                <h2 class="sub-title">¿Te gustaría buscar por tus géneros favoritos?</h2>
+                <div class="filtro-content">
+                    <div class="column">
+                        <button type="button" name="filtro" id="todo" onclick="cargarCanciones()"></button>
+                        <label for="todo">Todos los géneros</label></br>
+                        <button type="button" name="filtro" id="rock" onclick="cargarCancionesPorGenero('Rock')"></button>
+                        <label for="rock">Rock</label></br>
+                        <button type="button" name="filtro" id="alternativa" onclick="cargarCancionesPorGenero('Alternativa')"></button>
+                        <label for="alternativa">Alternativa</label></br>
+                        <button type="button" name="filtro" id="independiente" onclick="cargarCancionesPorGenero('Independiente')"></button>
+                        <label for="independiente|">Independiente</label></br>
+                        <button type="button" name="filtro" id="metal" onclick="cargarCancionesPorGenero('Metal')"></button>
+                        <label for="metal">Metal</label>
+                    </div> 
+                    <div class="column">
+                        <button type="button" name="filtro" id="salsa" onclick="cargarCancionesPorGenero('Salsa')"></button>
+                        <label for="salsa">Salsa</label>  <br>                      
+                        <button type="" name="filtro" id="synthpop" onclick="cargarCancionesPorGenero('Synthpop')"></button>
+                        <label for="synthpop">Synthpop</label> <br>
+                        <button type="button" name="filtro" id="dreampop" onclick="cargarCancionesPorGenero('Dreampop')"></button>
+                        <label for="dreampop">Dreampop</label> <br>
+                        <button type="button" name="filtro" id="blackgaze" onclick="cargarCancionesPorGenero('Blackgaze')"></button>
+                        <label for="blackgaze">Blackgaze</label> <br>
+                        <button type="checkbox" name="filtro" id="electronica" onclick="cargarCancionesPorGenero('Electrónica')"></button>
+                        <label for="electronica">Electrónica</label>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <div class="navegacion">
@@ -42,7 +71,6 @@
                 <th>Artista</th>
                 <th>Título</th>
                 <th>Género</th>
-                <th> <i class="fa-solid fa-filter"></i></th>
               </tr>
             </thead>
             <tbody id="tbody-content">

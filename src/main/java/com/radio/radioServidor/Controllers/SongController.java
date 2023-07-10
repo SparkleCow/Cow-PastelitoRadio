@@ -15,6 +15,7 @@ import java.util.List;
  *Tambien permite hacer las demas operaciones CRUD en la base de datos sin embargo estas requieren
  *autenticación de JWT.
  */
+
 @RestController
 public class SongController {
 
@@ -31,7 +32,7 @@ public class SongController {
 
     @PostMapping("/api/songs/gender")
     public ResponseEntity<List<DataResponseSong>> findByGender(@Valid @RequestBody DataRequestSongGender dataRequestSongGender){
-        return repositoryImp.findGender(dataRequestSongGender.genero());
+        return repositoryImp.findGender(dataRequestSongGender.gender());
     }
 
     @PostMapping("/api/songs/search")

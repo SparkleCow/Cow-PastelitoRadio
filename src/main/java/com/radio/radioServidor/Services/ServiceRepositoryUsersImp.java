@@ -21,17 +21,8 @@ public class ServiceRepositoryUsersImp implements ServiceRepositoryUsers{
     }
 
     @Override
-    public void deleteUser() {
-    }
-
-    @Override
     public Optional<UserEntity> findUser(String username){
         return usersRepository.findByUsername(username);
-
-    }
-
-    @Override
-    public void updateUser() {
     }
 
     @Override

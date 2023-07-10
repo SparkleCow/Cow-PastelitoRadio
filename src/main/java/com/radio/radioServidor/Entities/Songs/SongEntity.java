@@ -3,8 +3,6 @@ package com.radio.radioServidor.Entities.Songs;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Objects;
-
 @Entity
 @Builder
 @Table(name = "songs" )
@@ -34,6 +32,7 @@ public class SongEntity {
         this.genero = genero;
     }
 
+    /*Método para actualizar la entidad Song a través de un DTO */
     public void update(DataUpdateSong dataUpdateSong){
         if(dataUpdateSong.nombreArtista()!=null && !dataUpdateSong.nombreArtista().equals("")){
             this.nombreArtista = dataUpdateSong.nombreArtista();

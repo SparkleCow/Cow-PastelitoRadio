@@ -8,9 +8,5 @@ import java.util.Optional;
 @Service
 public interface ServiceRepositoryRoles {
 
-    public void createUser();
-    public void deleteUser();
-    public Optional<UserEntity> findUser();
-    public void updateUser();
     public Optional<RoleEntity> findByName(String name);
 }

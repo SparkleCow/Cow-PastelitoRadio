@@ -57,6 +57,50 @@ body {
     height: 250px;
 }
 
+/* filtro para los generos, hecho con botones */
+
+.filtro-container {
+    margin: 5%;
+    height: 35%;
+    width: 25%;
+}
+
+.filtro-content{
+    display: flex;
+    margin-top: 10px;
+}
+  
+.column {
+    padding: 5px;
+    flex: 1;
+    flex-direction: column;
+}
+  
+.column label{
+    order: 1;
+    line-height: 1.5rem;
+    padding:0 15px 0 5px; 
+    color: #f2f2f2;
+}
+
+.column input{
+    order: 2;
+    position: relative;
+    margin-left: -100;
+}
+  
+button{
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: black solid;
+} 
+  
+
 .container{
     min-height: 25vh;
     background-color: thistle;
@@ -178,3 +222,5 @@ input:focus{
     color: black;
     border: #f2f2f2;
 }
+
+

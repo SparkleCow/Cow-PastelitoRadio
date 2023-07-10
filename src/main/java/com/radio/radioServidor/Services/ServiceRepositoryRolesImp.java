@@ -14,26 +14,6 @@ public class ServiceRepositoryRolesImp implements ServiceRepositoryRoles {
         this.rolesRepository = rolesRepository;
     }
     @Override
-    public void createUser() {
-
-    }
-
-    @Override
-    public void deleteUser() {
-
-    }
-
-    @Override
-    public Optional<UserEntity> findUser() {
-        return Optional.empty();
-    }
-
-    @Override
-    public void updateUser() {
-
-    }
-
-    @Override
     public Optional<RoleEntity> findByName(String name) {
         return rolesRepository.findByName(name);
     }
