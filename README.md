@@ -4,7 +4,7 @@ Hi there!
 
 Welcome to Cow & Pastelito's radio, 
 a digital platform dedicated to bringing 
-abi unique experience in music and podcasts. We are passionate about music and truly believe in the power of podcasts to inform, entertain, and connect people.
+a unique experience in music and podcasts. We are passionate about music and truly believe in the power of podcasts to inform, entertain, and connect people.
 
 ### What's Cow & Pastelito's Radio ?
 
@@ -26,6 +26,7 @@ history, politics, and even entertainment.
 8. MySQL Workbench 
 9. Lombok library
 10. Trello
+11. Postman
 
 ### How does it works ? 
 
